@@ -1,0 +1,139 @@
+/* Header Container */
+.header {
+  background-color: #1a1f2e;
+  border-bottom: 1px solid #323d52;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.header-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Credits Display */
+.credits-box {
+  padding: 0.5rem 1rem;
+  background-color: #252d3d;
+  border-radius: 0.5rem;
+}
+
+.credits-label {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-right: 0.25rem;
+}
+
+.credits-value {
+  font-weight: 700;
+  color: #7491ff;
+}
+
+/* User Profile Button */
+.user-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-button:hover {
+  background-color: #252d3d;
+}
+
+.user-avatar {
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(135deg, #2f4fff 0%, #ff2f5f 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.user-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* Dropdown Menu */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 12rem;
+  background-color: #252d3d;
+  border: 1px solid #323d52;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  z-index: 50;
+}
+
+/* Logout Button */
+.logout-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: none;
+  color: #ff4673;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #323d52;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 1rem;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .dropdown-menu {
+    width: 10rem;
+  }
+}
+
+/* Color Variables (optional - for consistency) */
+:root {
+  --color-gray-900: #1a1f2e;
+  --color-gray-800: #252d3d;
+  --color-gray-700: #323d52;
+  --color-blue-600: #2f4fff;
+  --color-pink-600: #ff2f5f;
+  --color-blue-400: #7491ff;
+  --color-red-400: #ff4673;
+  --color-text-white: #ffffff;
+  --color-text-gray: #9ca3af;
+}
